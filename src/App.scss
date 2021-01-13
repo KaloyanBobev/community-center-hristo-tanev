@@ -1,3 +1,35 @@
 .app {
-  text-align: center;
+  border: 1px solid black;
 }
+
+/*navbar*/
+.navbar-container {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 1.5rem;
+
+  .logo {
+    padding-top: 1rem;
+    width: 5rem;
+    height: auto;
+    align-self: center;
+    transition: height 1s;
+    &:hover {
+      width: 4rem;
+    }
+  }
+  a {
+    text-decoration: none;
+    transition: 1s;
+    &:hover {
+      color: green;
+      text-shadow: 0 0 15px lightgreen;
+    }
+  }
+}
+
+/*end navbar*/
