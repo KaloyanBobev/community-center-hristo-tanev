@@ -1,35 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap");
 .app {
   border: 1px solid black;
+  font-family: "Hachi Maru Pop", cursive;
 }
 
+$mainColor: lightgray;
 /*navbar*/
 .navbar-container {
-  width: 70%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-wrap: wrap;
+  background-color: $mainColor;
   font-size: 1.5rem;
+  .nav-center {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
 
-  .logo {
-    padding-top: 1rem;
-    width: 5rem;
-    height: auto;
-    align-self: center;
-    transition: height 1s;
-    &:hover {
-      width: 4rem;
+    .logo {
+      width: 5rem;
+      height: auto;
+      align-self: center;
+      background-size: 0 !important;
     }
-  }
-  a {
-    text-decoration: none;
-    transition: 1s;
-    &:hover {
-      color: green;
-      text-shadow: 0 0 15px lightgreen;
+    a {
+      text-decoration: none;
+      transition: 1s;
+      &:hover {
+        color: green;
+        text-shadow: 0 0 15px lightgreen;
+      }
     }
   }
 }
 
 /*end navbar*/
+
+/*footer*/
+.footer-container {
+  text-align: center;
+  background: $mainColor;
+  .social-container {
+    padding: 25px 50px;
+    a.social {
+      margin: 0 1rem;
+      transition: transform 250ms;
+      display: inline-block;
+      &.social:hover {
+        transform: translateY(-2px);
+      }
+      &.youtube {
+        color: #eb3223;
+      }
+
+      &.facebook {
+        color: #4968ad;
+      }
+
+      &.twitter {
+        color: #49a1eb;
+      }
+
+      &.instagram {
+        color: black;
+      }
+    }
+  }
+}
+/*end footer*/
