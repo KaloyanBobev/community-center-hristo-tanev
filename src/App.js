@@ -1,6 +1,7 @@
 import { Switch, Route } from 'react-router-dom';
 import './App.scss';
 import Navbar from './components/Navbar';
+import Footer from './components/footer';
 
 import Home from './pages/home';
 import About from './pages/about';
@@ -23,6 +24,7 @@ function App() {
         <Route path="/membership" component={Membership} />
         <Route component={notFound} />
       </Switch>
+      <Footer />
     </div>
   );
 }
