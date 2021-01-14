@@ -1,7 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .app {
   border: 1px solid black;
-  font-family: "Hachi Maru Pop", cursive;
 }
 
 $mainColor: lightgray;
@@ -9,7 +13,12 @@ $mainColor: lightgray;
 .navbar-container {
   background-color: $mainColor;
   font-size: 1.5rem;
-  .nav-center {
+  font-family: "Hachi Maru Pop", cursive;
+  .nav-top {
+    padding-bottom: 1rem;
+  }
+  .nav-center,
+  .nav-top {
     width: 70%;
     display: flex;
     flex-direction: row;
@@ -21,7 +30,6 @@ $mainColor: lightgray;
       width: 5rem;
       height: auto;
       align-self: center;
-      background-size: 0 !important;
     }
     a {
       text-decoration: none;
@@ -32,22 +40,75 @@ $mainColor: lightgray;
       }
     }
   }
+  .slide-container {
+    padding: 0;
+    margin: 0;
+    .each-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .slide1 {
+      width: 20rem;
+      height: 20rem;
+      background-size: 20rem;
+      background-repeat: no-repeat;
+      background-image: url("./images/slideshow/SAM_4778.JPG");
+      span {
+        font-weight: 900;
+      }
+    }
+    .slide2 {
+      width: 20rem;
+      height: 20rem;
+      background-size: 20rem;
+      background-repeat: no-repeat;
+      background-image: url("./images/slideshow/SAM_4779.JPG");
+      span {
+        font-weight: 900;
+      }
+    }
+    .slide3 {
+      width: 20rem;
+      height: 20rem;
+      background-size: 20rem;
+      background-repeat: no-repeat;
+      background-image: url("./images/slideshow/SAM_4780.JPG");
+      span {
+        font-weight: 900;
+      }
+    }
+  }
 }
 
 /*end navbar*/
 
+/*home*/
+.container {
+  width: auto;
+  height: 30rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: justify;
+  margin: 5rem;
+  font-size: 1.8rem;
+}
+/*end home*/
+
 /*footer*/
 .footer-container {
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
   text-align: center;
   background: $mainColor;
   .social-container {
-    padding: 25px 50px;
+    padding: 1rem;
     a.social {
       margin: 0 1rem;
       transition: transform 250ms;
       display: inline-block;
       &.social:hover {
-        transform: translateY(-2px);
+        transform: translateY(-4px);
       }
       &.youtube {
         color: #eb3223;
