@@ -13,6 +13,7 @@ export default class Navbar extends Component {
     render() {
         return (
             <nav className="navbar-container">
+
                 <div className="nav-top">
                     <Link to="/galleryAvia">Алба Авитохол</Link>
                     <Link to="/galleryAvia">Картини на Христо Танев</Link>
@@ -20,31 +21,34 @@ export default class Navbar extends Component {
 
                 </div>
                 <div className="slide-container">
+                    <img
+                        src={sign}
+                        className="logo1"
+                        alt="sign hristo tanev" />
                     <Slide>
                         <div className="each-slide">
-                            <div className="slide1 image-size" >
+                            <div className="slide1 slide" >
                                 <span>Slide 1</span>
                             </div>
                         </div>
                         <div className="each-slide">
-                            <div className="slide2" >
+                            <div className="slide2 slide" >
                                 <span>Slide 2</span>
                             </div>
                         </div>
                         <div className="each-slide">
-                            <div className="slide3" >
+                            <div className="slide3 slide" >
                                 <span>Slide 3</span>
                             </div>
                         </div>
                     </Slide>
+                    <img
+                        src={sign}
+                        className="logo2"
+                        alt="hristo tanev" />
                 </div>
                 <div className="nav-center">
-                    <Link to="/">
-                        <img
-                            src={sign}
-                            className="logo"
-                            alt="logo" />
-                    </Link>
+
                     <Link to="/">Начало</Link>
                     <Link to="/membership">Членство</Link>
                     <Link to="/activity">Дейност</Link>
