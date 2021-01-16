@@ -7,8 +7,12 @@ body {
 .app {
   border: 1px solid black;
 }
-
+$imageSize: 20rem;
+$spanPadding: 10px;
 $mainColor: lightgray;
+$hoverColorText: green;
+$hoverColorShadow: 0 0 15px blue;
+
 /*navbar*/
 .navbar-container {
   background-color: $mainColor;
@@ -26,17 +30,15 @@ $mainColor: lightgray;
     align-items: center;
     flex-wrap: wrap;
 
-    .logo {
-      width: 5rem;
-      height: auto;
-      align-self: center;
-    }
     a {
+      margin: 1rem;
+      color: black;
+      font-weight: bolder;
       text-decoration: none;
       transition: 1s;
       &:hover {
-        color: green;
-        text-shadow: 0 0 15px lightgreen;
+        color: $hoverColorText;
+        text-shadow: $hoverColorShadow;
       }
     }
   }
@@ -45,54 +47,54 @@ $mainColor: lightgray;
     margin: 0;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    .logo {
-      width: 20rem;
-      height: auto;
+    justify-content: space-around;
+
+    .img-size {
+      width: $imageSize;
+      height: $imageSize;
       align-self: center;
+    }
+    .logo1,
+    .logo2,
+    .slide-shadow {
+      box-shadow: 0 0 15px black;
     }
     .each-slide {
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 350px;
-    }
-    .each-slide > div {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-size: cover;
+      width: $imageSize;
+      height: auto;
+
+      & > div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-size: cover;
+        & > span {
+          width: 100%;
+          text-align: center;
+          align-self: flex-end;
+          padding: $spanPadding;
+          font-size: 2 * $spanPadding;
+          background: white;
+          font-weight: bolder;
+        }
+      }
     }
 
-    .each-slide span {
-      padding: 20px;
-      font-size: 20px;
-      background: #efefef;
-    }
     .slide {
-      width: 20rem;
-      height: 20rem;
-      background-size: 20rem;
-      background-repeat: no-repeat;
-      text-align: center;
+      width: $imageSize;
+      height: $imageSize;
     }
     .slide1 {
       background-image: url("./images/slideshow/SAM_4778.JPG");
-      span {
-        font-weight: 900;
-      }
     }
     .slide2 {
       background-image: url("./images/slideshow/SAM_4779.JPG");
-      span {
-        font-weight: 900;
-      }
     }
     .slide3 {
       background-image: url("./images/slideshow/SAM_4780.JPG");
-      span {
-        font-weight: 900;
-      }
     }
   }
 }
