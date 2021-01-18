@@ -1,0 +1,38 @@
+{
+    "top": [
+        {
+            "to": "galleryAvia",
+            "text": "Алба Авитохол"
+        },
+        {
+            "to": "galleryAvia",
+            "text": "Картини на Христо Танев"
+        },
+        {
+            "to": "galleryAvia",
+            "text": "Събития"
+        }
+    ],
+    "center": [
+        {
+            "to": "/",
+            "text": "Начало"
+        },
+        {
+            "to": "membership",
+            "text": "Членство"
+        },
+        {
+            "to": "activity",
+            "text": "Дейност"
+        },
+        {
+            "to": "library",
+            "text": "Библиотека"
+        },
+        {
+            "to": "about",
+            "text": "За нас"
+        }
+    ]
+}
