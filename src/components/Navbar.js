@@ -1,24 +1,36 @@
 import React, { Component } from 'react';
 
-import { Link } from 'react-router-dom';
+
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
 import sign1 from '../images/sign-hristo-tanev.png';
 import sign2 from '../images/portret-hristo-tanev.jpg';
-
-
+import Navigation from './Navigation';
+import navData from '../data/navData';
 
 
 export default class Navbar extends Component {
+    constructor() {
+        super();
+        this.state = {
+            nav: navData,
+        };
+    }
+
+    componentDidMount() {
+
+        this.setState({
+            nav: navData
+        })
+
+    }
+
     render() {
+        console.log(this.state.nav)
         return (
             <nav className="navbar-container">
-
                 <div className="nav-top">
-                    <Link to="/galleryAvia">Алба Авитохол</Link>
-                    <Link to="/galleryAvia">Картини на Христо Танев</Link>
-                    <Link to="/galleryAvia">Събития</Link>
-
+                    <Navigation nav={this.state.nav.top} />
                 </div>
                 <div className="slide-container">
                     <img
@@ -48,13 +60,7 @@ export default class Navbar extends Component {
                         alt="hristo tanev" />
                 </div>
                 <div className="nav-center">
-
-                    <Link to="/">Начало</Link>
-                    <Link to="/membership">Членство</Link>
-                    <Link to="/activity">Дейност</Link>
-
-                    <Link to="/library">Библиотека</Link>
-                    <Link to="/about">За нас</Link>
+                    <Navigation nav={this.state.nav.center} />
                 </div>
             </nav>
         )
