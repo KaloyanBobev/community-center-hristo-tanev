@@ -11,12 +11,12 @@ $imageSize: 20rem;
 $spanPadding: 10px;
 $mainColor: lightgray;
 $hoverColorText: green;
-$hoverColorShadow: 0 0 15px blue;
+$hoverColorShadow: 1px 1px 3px black;
 
 /*navbar*/
 .navbar-container {
   background-color: $mainColor;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-family: "Hachi Maru Pop", cursive;
   .nav-top {
     padding-bottom: 1rem;
@@ -77,7 +77,7 @@ $hoverColorShadow: 0 0 15px blue;
           align-self: flex-end;
           padding: $spanPadding;
           font-size: 2 * $spanPadding;
-          background: white;
+          background: $mainColor;
           font-weight: bolder;
         }
       }
@@ -100,7 +100,9 @@ $hoverColorShadow: 0 0 15px blue;
 }
 @media screen and (max-width: 960px) {
   .navbar-container {
-    display: none;
+    .slide-container {
+      display: none;
+    }
   }
 }
 /*end navbar*/
