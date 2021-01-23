@@ -16,12 +16,12 @@ export default class Navbar extends Component {
             nav: navData,
             isOpen: false
         };
+        this.hadleToggle = this.hadleToggle.bind(this);
     }
 
     componentDidMount() {
-
         this.setState({
-            nav: navData
+            nav: navData,
         })
 
     }
@@ -30,20 +30,25 @@ export default class Navbar extends Component {
         this.setState({
             isOpen: !this.state.isOpen
         })
+
     }
     render() {
-        console.log(this.isOpen);
+        console.log(this.state.isOpen);
         return (
             <nav className="navbar-container">
 
-                <div className="nav-top">
-                    <Navigation nav={this.state.nav.top} />
-                    <button type="button" className="nav-btn">
-                        <FaAlignRight
-                            className="nav-icon"
-                            onClick={this.hadleToggle} />
-                    </button>
+                <div className="nav-top ">
+                    <div onClick={this.hadleToggle} className={this.state.isOpen ?
+                        "nav-links show-nav" :
+                        "nav-links"}>
+                        <Navigation
+                            nav={this.state.nav.top}
+
+                        />
+                    </div>
+
                 </div>
+
                 <div className="slide-container">
                     <img
                         src={sign1}
@@ -72,8 +77,19 @@ export default class Navbar extends Component {
                         alt="hristo tanev" />
                 </div>
                 <div className="nav-center">
-                    <Navigation nav={this.state.nav.center} />
+                    <div onClick={this.hadleToggle} className={this.state.isOpen ?
+                        "nav-links show-nav" :
+                        "nav-links"}>
+                        <Navigation
+                            nav={this.state.nav.center}
+                            className="nav-links" />
+                    </div>
                 </div>
+                <button type="button" className="nav-btn">
+                    <FaAlignRight
+                        className="nav-icon"
+                        onClick={this.hadleToggle} />
+                </button>
             </nav>
         )
     }
