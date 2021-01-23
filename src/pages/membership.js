@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
 
+import UnderConstruction from '../components/underConstruction';
+
 export default class membership extends Component {
     render() {
         return (
             <div>
-                Membership
+                <UnderConstruction />
             </div>
         )
     }
