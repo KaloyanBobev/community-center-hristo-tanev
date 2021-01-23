@@ -4,14 +4,16 @@ body {
   padding: 0;
 }
 
-.app {
-  border: 1px solid black;
-}
 $imageSize: 20rem;
 $spanPadding: 10px;
 $mainColor: lightgray;
 $hoverColorText: green;
 $hoverColorShadow: 1px 1px 3px black;
+
+nav-btn {
+  border: none;
+  outline: none;
+}
 
 /*navbar*/
 .navbar-container {
@@ -21,12 +23,15 @@ $hoverColorShadow: 1px 1px 3px black;
   .nav-top {
     padding-bottom: 1rem;
   }
+  .nav-btn {
+    display: none;
+  }
   .nav-center,
   .nav-top {
-    width: 70%;
+    width: 80%;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
 
@@ -98,11 +103,47 @@ $hoverColorShadow: 1px 1px 3px black;
     }
   }
 }
+
 @media screen and (max-width: 960px) {
   .navbar-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    .nav-btn {
+      margin: 1rem;
+      display: flex;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      outline: none;
+      .nav-icon {
+        font-size: 1.5rem;
+        color: black;
+      }
+    }
+
+    .nav-top,
+    .nav-center {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-self: start;
+    }
+
     .slide-container {
       display: none;
     }
+  }
+  .nav-links {
+    height: 0;
+    overflow: hidden;
+    & > a {
+      display: block;
+    }
+  }
+  .show-nav {
+    height: auto;
   }
 }
 /*end navbar*/
