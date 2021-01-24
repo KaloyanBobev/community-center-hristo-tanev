@@ -4,7 +4,7 @@ body {
   padding: 0;
 }
 
-$imageSize: 20rem;
+$imageSize: 10rem;
 $spanPadding: 10px;
 $mainColor: lightgray;
 $hoverColorText: green;
@@ -15,8 +15,16 @@ nav-btn {
   outline: none;
 }
 
+body {
+  margin-top: 15rem;
+}
+
 /*navbar*/
 .navbar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   background-color: $mainColor;
   font-size: 1.2rem;
   font-family: "Hachi Maru Pop", cursive;
@@ -36,7 +44,7 @@ nav-btn {
     flex-wrap: wrap;
 
     a {
-      margin: 1rem;
+      margin: 3rem;
       color: black;
       font-weight: bolder;
       text-decoration: none;
@@ -129,6 +137,9 @@ nav-btn {
       display: flex;
       flex-direction: column;
       align-self: start;
+      a {
+        margin: 1rem;
+      }
     }
 
     .slide-container {
@@ -155,8 +166,8 @@ nav-btn {
   overflow: hidden;
   text-overflow: ellipsis;
   text-align: justify;
-  margin: 5rem;
-  font-size: 1.8rem;
+  margin: 1rem;
+  font-size: 1.2rem;
 }
 /*end home*/
 
@@ -198,12 +209,19 @@ nav-btn {
 /*under construction*/
 .underconstruction-container {
   width: auto;
-  height: 40rem;
+  height: 47rem;
   background-image: url("./images/under-construction-background.jpg");
-  h1,
-  h3 {
-    color: bisque;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: yellow;
+  font-size: 2rem;
+  text-transform: capitalize;
+
+  a {
+    color: yellow;
+    text-decoration: none;
   }
 }
 /*end under construction*/
