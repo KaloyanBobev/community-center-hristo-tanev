@@ -36,19 +36,26 @@ export default class Navbar extends Component {
         console.log(this.state.isOpen);
         return (
             <nav className="navbar-container">
-
-                <div className="nav-top ">
+                <div className="logo-small-screen">
+                    <img
+                        src={sign1}
+                        alt="sign hristo tanev" />
+                    <h3> Читалище Христо Танев</h3>
+                    <button type="button" className="nav-btn">
+                        <FaAlignRight
+                            className="nav-icon"
+                            onClick={this.hadleToggle} />
+                    </button>
+                </div>
+                <div className="nav-top">
                     <div onClick={this.hadleToggle} className={this.state.isOpen ?
                         "nav-links show-nav" :
                         "nav-links"}>
                         <Navigation
                             nav={this.state.nav.top}
-
                         />
                     </div>
-
                 </div>
-
                 <div className="slide-container">
                     <img
                         src={sign1}
@@ -85,11 +92,6 @@ export default class Navbar extends Component {
                             className="nav-links" />
                     </div>
                 </div>
-                <button type="button" className="nav-btn">
-                    <FaAlignRight
-                        className="nav-icon"
-                        onClick={this.hadleToggle} />
-                </button>
             </nav>
         )
     }
