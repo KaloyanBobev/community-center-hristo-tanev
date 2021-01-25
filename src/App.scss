@@ -180,12 +180,21 @@ body {
 /*home*/
 .container {
   width: auto;
-  height: 30rem;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  text-align: justify;
-  margin: 1rem;
-  font-size: 1.2rem;
+
+  .text-box {
+    height: 20rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: justify;
+    margin: 1rem;
+    font-size: 1.2rem;
+  }
+  .btn {
+    padding: 1rem auto;
+  }
+}
+.show {
+  height: auto;
 }
 /*end home*/
 
