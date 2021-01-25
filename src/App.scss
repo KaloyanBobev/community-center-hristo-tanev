@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
 }
-
+$sreenSize: 960px;
 $imageSize: 10rem;
 $spanPadding: 10px;
 $mainColor: lightgray;
@@ -16,9 +16,13 @@ nav-btn {
 }
 
 body {
-  margin-top: 15rem;
+  margin-top: 14rem;
 }
-
+@media screen and (max-width: $sreenSize) {
+  body {
+    margin-top: 5rem;
+  }
+}
 /*navbar*/
 .navbar-container {
   position: fixed;
@@ -31,7 +35,8 @@ body {
   .nav-top {
     padding-bottom: 1rem;
   }
-  .nav-btn {
+  .nav-btn,
+  .logo-small-screen {
     display: none;
   }
   .nav-center,
@@ -112,11 +117,24 @@ body {
   }
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: $sreenSize) {
   .navbar-container {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
     align-items: flex-start;
+
+    .logo-small-screen {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      img {
+        align-self: center;
+        width: $imageSize/2;
+        height: $imageSize/2;
+      }
+    }
     .nav-btn {
       margin: 1rem;
       display: flex;
@@ -135,10 +153,10 @@ body {
       margin: 0;
       padding: 0;
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       align-self: start;
       a {
-        margin: 1rem;
+        margin: 0.5rem;
       }
     }
 
