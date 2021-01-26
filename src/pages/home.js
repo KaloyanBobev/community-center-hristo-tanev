@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import homeData from '../data/data';
 import ToggleBtn from '../components/ToggleBtn';
+import Container from '../components/Container';
 
 export default class home extends Component {
     constructor() {
@@ -27,23 +28,19 @@ export default class home extends Component {
     }
 
     render() {
-
+        console.log(this.state.visible);
         return (
-            <section className={this.state.visible ? "container" : "container show"}>
-                <div className="text-box">
+            <>
+                <section className={this.state.visible ? "container" : "container show"}    >
                     <h1>НАРОДНО ЧИТАЛИЩЕ „ХРИСТО ТАНЕВ – 2020“ СТАРА ЗАГОРА</h1>
-                    {this.state.data.map((item) => {
-                        return (
-                            <div key={item.sys.id}>{item.fields.text}</div>
-                        )
-                    })}
-                </div>
+                    <Container data={this.state.data} />
+                </section>
                 <ToggleBtn
                     visible={this.state.visible}
                     handleToggle={this.handleToggle}
                 />
+            </>
 
-            </section>
         )
     }
 }
