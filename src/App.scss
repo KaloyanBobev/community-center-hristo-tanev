@@ -62,15 +62,15 @@ body {
   }
   .nav-center,
   .nav-top {
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
 
     a {
-      margin: 3rem;
+      margin: 1rem;
       color: black;
       font-weight: bolder;
       text-decoration: none;
@@ -175,7 +175,7 @@ body {
       padding: 0;
       display: flex;
       flex-direction: row;
-      align-self: start;
+
       a {
         margin: 0.5rem;
       }
@@ -199,7 +199,8 @@ body {
 /*end navbar*/
 
 /*home*/
-.container {
+.container,
+.alba-container {
   width: auto;
   height: 200px;
   padding: 1rem;
