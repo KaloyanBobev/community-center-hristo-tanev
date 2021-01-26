@@ -9,7 +9,10 @@ $spanPadding: 10px;
 $mainColor: lightgray;
 $hoverColorText: green;
 $hoverColorShadow: 1px 1px 3px black;
-
+$fontSize: 1.1rem;
+$HeaderOneSize: 1.5rem;
+$mainTransition: all 0.3s linear;
+$mainSpacing: 3px;
 nav-btn {
   border: none;
   outline: none;
@@ -23,6 +26,23 @@ body {
     margin-top: 5rem;
   }
 }
+
+.btn {
+  display: inline-block;
+  letter-spacing: $mainSpacing;
+  border: none;
+  background: none;
+  outline: none;
+  font-weight: 900;
+  font-size: $HeaderOneSize/1.5;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: $mainTransition;
+  &:hover {
+    color: $hoverColorText;
+  }
+}
+
 /*navbar*/
 .navbar-container {
   position: fixed;
@@ -31,6 +51,7 @@ body {
   width: 100%;
   background-color: $mainColor;
   font-size: 1.2rem;
+  letter-spacing: $mainSpacing;
   font-family: "Hachi Maru Pop", cursive;
   .nav-top {
     padding-bottom: 1rem;
@@ -180,18 +201,30 @@ body {
 /*home*/
 .container {
   width: auto;
+  height: 200px;
+  padding: 1rem;
+  overflow: hidden;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  text-indent: 2rem;
+  font-size: $fontSize;
 
-  .text-box {
-    height: 20rem;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    text-align: justify;
+  h1 {
+    font-size: $HeaderOneSize;
+    margin: 1rem 0;
+  }
+
+  p {
     margin: 1rem;
-    font-size: 1.2rem;
+    text-align: justify;
   }
-  .btn {
-    padding: 1rem auto;
-  }
+}
+.btn {
+  display: flex;
+  justify-self: flex-end;
+  margin: 1rem auto;
 }
 .show {
   height: auto;
