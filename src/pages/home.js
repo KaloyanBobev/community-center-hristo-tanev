@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import homeData from '../data/data';
+import homeData from '../data/homeData';
 import ToggleBtn from '../components/ToggleBtn';
 import Container from '../components/Container';
 
