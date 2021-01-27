@@ -24,16 +24,17 @@ export default class galleryAvia extends Component {
         })
     }
     render() {
-
+        let heading = "Васа РУСЕВА, галерия „Алба-Авитохол“ в Стара Загора: Редовните ни срещи продължават";
         return (
             <>
-                <section className={this.state.visible
-                    ? "container"
-                    : "container show"}>
-                    <h1>Васа РУСЕВА, галерия „Алба-Авитохол“ в Стара Загора: Редовните ни срещи продължават</h1>
-                    <Container data={this.state.data} />
 
-                </section>
+                <Container
+                    className={"alba-text"}
+                    visible={this.state.visible}
+                    data={this.state.data}
+                    heading={heading}
+                />
+
                 <ToggleBtn
                     handleToggle={this.handleToggle}
                     visible={this.state.visible}
