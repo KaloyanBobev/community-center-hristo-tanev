@@ -222,6 +222,18 @@ body {
     text-align: justify;
   }
 }
+.alba-text {
+  & > p:first-child {
+    font-style: italic;
+    letter-spacing: 2px;
+  }
+  & > p:nth-child(2n) {
+    font-weight: 900;
+
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+}
 .btn {
   display: flex;
   justify-self: flex-end;
