@@ -33,7 +33,7 @@ export default class Navbar extends Component {
 
     }
     render() {
-        console.log(this.state.isOpen);
+
         return (
             <nav className="navbar-container">
                 <div className="logo-small-screen">
