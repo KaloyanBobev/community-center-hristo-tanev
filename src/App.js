@@ -10,13 +10,14 @@ import GalleryAvia from './pages/galleryAvia';
 import Library from './pages/library';
 import Membership from './pages/membership';
 import notFound from './pages/notFound';
-
+import Pictures from './pages/pictures';
 function App() {
   return (
     <div className="app">
       <Navbar />
       <Switch>
         <Route exact path="/" component={Home} />
+        <Route exact path="/pictures" component={Pictures} />
         <Route path="/about" component={About} />
         <Route path="/activity" component={Activity} />
         <Route path="/galleryAvia" component={GalleryAvia} />
