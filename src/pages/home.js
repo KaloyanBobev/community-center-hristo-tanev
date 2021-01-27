@@ -32,6 +32,7 @@ export default class home extends Component {
         return (
             <>
                 <Container
+                    visible={this.state.visible}
                     data={this.state.data}
                     heading={heading}
                 />
