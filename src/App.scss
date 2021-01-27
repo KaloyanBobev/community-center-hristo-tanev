@@ -19,7 +19,7 @@ nav-btn {
 }
 
 body {
-  margin-top: 14rem;
+  margin-top: 18rem;
 }
 @media screen and (max-width: $sreenSize) {
   body {
@@ -50,7 +50,7 @@ body {
   left: 0;
   width: 100%;
   background-color: $mainColor;
-  font-size: 1.2rem;
+  font-size: $fontSize;
   letter-spacing: $mainSpacing;
   font-family: "Hachi Maru Pop", cursive;
   .nav-top {
@@ -65,10 +65,10 @@ body {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
-
+    margin: 1rem;
     a {
       margin: 1rem;
       color: black;
@@ -150,6 +150,7 @@ body {
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
+      font-size: $fontSize * 0.9;
       img {
         align-self: center;
         width: $imageSize/2;
@@ -199,8 +200,7 @@ body {
 /*end navbar*/
 
 /*home*/
-.container,
-.alba-container {
+.container {
   width: auto;
   height: 200px;
   padding: 1rem;
@@ -235,7 +235,7 @@ body {
 /*footer*/
 .footer-container {
   padding-bottom: 1rem;
-  font-size: 1.5rem;
+  font-size: $fontSize;
   text-align: center;
   background: $mainColor;
   .social-container {
