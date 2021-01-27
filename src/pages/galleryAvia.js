@@ -27,7 +27,9 @@ export default class galleryAvia extends Component {
 
         return (
             <>
-                <section className="alba-container">
+                <section className={this.state.visible
+                    ? "container"
+                    : "container show"}>
                     <h1>Васа РУСЕВА, галерия „Алба-Авитохол“ в Стара Загора: Редовните ни срещи продължават</h1>
                     <Container data={this.state.data} />
 
