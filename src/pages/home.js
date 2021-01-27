@@ -28,13 +28,13 @@ export default class home extends Component {
     }
 
     render() {
-        console.log(this.state.visible);
+        let heading = "НАРОДНО ЧИТАЛИЩЕ „ХРИСТО ТАНЕВ – 2020“ СТАРА ЗАГОРА";
         return (
             <>
-                <section className={this.state.visible ? "container" : "container show"}    >
-                    <h1>НАРОДНО ЧИТАЛИЩЕ „ХРИСТО ТАНЕВ – 2020“ СТАРА ЗАГОРА</h1>
-                    <Container data={this.state.data} />
-                </section>
+                <Container
+                    data={this.state.data}
+                    heading={heading}
+                />
                 <ToggleBtn
                     visible={this.state.visible}
                     handleToggle={this.handleToggle}
