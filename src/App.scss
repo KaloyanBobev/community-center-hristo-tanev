@@ -262,6 +262,26 @@ h1 {
 }
 
 /*end pictures*/
+/*paypal*/
+.paypal-container {
+  position: static;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+  p {
+    justify-content: center;
+  }
+}
+/*end paypal*/
+
+/*about*/
+.about-container {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+/*end about*/
 
 /*footer*/
 .footer-container {
