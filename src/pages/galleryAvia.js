@@ -27,7 +27,6 @@ export default class galleryAvia extends Component {
         let heading = "Васа РУСЕВА, галерия „Алба-Авитохол“ в Стара Загора: Редовните ни срещи продължават";
         return (
             <>
-
                 <Container
                     className={"alba-text"}
                     visible={this.state.visible}
