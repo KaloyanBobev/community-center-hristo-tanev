@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import UnderConstruction from '../components/underConstruction';
+import GoogleMap from '../components/googleMap';
+
 export default class about extends Component {
     render() {
         return (
@@ -8,6 +9,7 @@ export default class about extends Component {
                 <h3>адрес</h3>
                 <h3>телефон за контакт</h3>
                 <h3>GSM за контакт</h3>
+                <GoogleMap />
             </section>
         )
     }
