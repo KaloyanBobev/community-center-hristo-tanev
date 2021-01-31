@@ -9,17 +9,26 @@ export default class membership extends Component {
                 <h1>Заплащане на месечен членски внос</h1>
                 <p>За заплащането на членския внос могат да с изпозват следните методи</p>
                 <PayPalButton
-                    amount="0.01"
-                    // shippingPreference="NO_SHIPPING" // default is "GET_FROM_FILE"
-                    onSuccess={(details, data) => {
-                        alert("Transaction completed by " + details.payer.name.given_name);
+                    options={{ vault: true }}
+                    createSubscription={(data, actions) => {
+                        return actions.subscription.create({
+                            plan_id: 'P-XXXXXXXXXXXXXXXXXXXXXXXX'
+                        });
+                    }}
+                    onApprove={(data, actions) => {
+                        // Capture the funds from the transaction
+                        return actions.subscription.get().then(function (details) {
+                            // Show a success message to your buyer
+                            alert("Subscription completed");
 
-                        // OPTIONAL: Call your server to save the transaction
-                        return fetch("/paypal-transaction-complete", {
-                            method: "post",
-                            body: JSON.stringify({
-                                orderID: data.orderID
-                            })
+                            // OPTIONAL: Call your server to save the subscription
+                            return fetch("/paypal-subscription-complete", {
+                                method: "post",
+                                body: JSON.stringify({
+                                    orderID: data.orderID,
+                                    subscriptionID: data.subscriptionID
+                                })
+                            });
                         });
                     }}
                 />
