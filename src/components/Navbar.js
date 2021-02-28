@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
 import { FaAlignRight } from 'react-icons/fa';
-import sign1 from '../images/logo_2.png';
+import sign1 from '../images/logo_3.png';
 import sign2 from '../images/portret-hristo-tanev.jpg';
 import Navigation from './Navigation';
 import navData from '../data/navData';
@@ -16,7 +16,7 @@ export default class Navbar extends Component {
             nav: navData,
             isOpen: false
         };
-        this.hadleToggle = this.hadleToggle.bind(this);
+        this.hangleToggle = this.hangleToggle.bind(this);
     }
 
     componentDidMount() {
@@ -26,7 +26,7 @@ export default class Navbar extends Component {
 
     }
 
-    hadleToggle() {
+    hangleToggle() {
         this.setState({
             isOpen: !this.state.isOpen
         })
@@ -44,11 +44,11 @@ export default class Navbar extends Component {
                     <button type="button" className="nav-btn">
                         <FaAlignRight
                             className="nav-icon"
-                            onClick={this.hadleToggle} />
+                            onClick={this.hangleToggle} />
                     </button>
                 </div>
                 <div className="nav-top">
-                    <div onClick={this.hadleToggle} className={this.state.isOpen ?
+                    <div onClick={this.hangleToggle} className={this.state.isOpen ?
                         "nav-links show-nav" :
                         "nav-links"}>
                         <Navigation
@@ -84,7 +84,7 @@ export default class Navbar extends Component {
                         alt="hristo tanev" />
                 </div>
                 <div className="nav-center">
-                    <div onClick={this.hadleToggle} className={this.state.isOpen ?
+                    <div onClick={this.hangleToggle} className={this.state.isOpen ?
                         "nav-links show-nav" :
                         "nav-links"}>
                         <Navigation
