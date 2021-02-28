@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
 import { FaAlignRight } from 'react-icons/fa';
-import sign1 from '../images/sign-hristo-tanev.png';
+import sign1 from '../images/logo_2.png';
 import sign2 from '../images/portret-hristo-tanev.jpg';
 import Navigation from './Navigation';
 import navData from '../data/navData';
