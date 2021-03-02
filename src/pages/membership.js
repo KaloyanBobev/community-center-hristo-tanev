@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import { VscCloudDownload } from 'react-icons/vsc'
 import doc from '../data/zaivlenieMembership.doc';
 import rules from '../data/Scan_Ustav.pdf';
 import certificate from '../data/Udostoverenie_HristoTanev-2020.pdf';
@@ -7,13 +7,13 @@ import certificate from '../data/Udostoverenie_HristoTanev-2020.pdf';
 export default class membership extends Component {
     render() {
         return (
-            <section className="paypal-container">
+            <section className="memmbership-container container">
                 <h1>Заявление за членство</h1>
-                <a href={doc}> линк към заявление</a>
+                <a href={doc}><VscCloudDownload /> линк към заявление </a>
                 <h1>Устав на читалище Христо Танев</h1>
-                <a href={rules}>линк към устава на читалището</a>
+                <a href={rules}><VscCloudDownload /> линк към устава на читалището</a>
                 <h1>Удостоверение за вписване в регистъра на народните читалища</h1>
-                <a href={certificate}>линк към удостоверението</a>
+                <a href={certificate}><VscCloudDownload /> линк към удостоверението</a>
             </section>
         )
     }
