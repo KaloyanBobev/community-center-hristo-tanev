@@ -1,11 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap");
-body {
-  margin: 0;
-  padding: 0;
-}
+
 $sreenSize: 960px;
 $imageSize: 10rem;
 $spanPadding: 10px;
+$linkColor: black;
 $mainColor: lightgray;
 $hoverColorText: green;
 $hoverColorShadow: 1px 1px 3px black;
@@ -13,14 +11,34 @@ $fontSize: 1.1rem;
 $HeaderOneSize: 1.5rem;
 $mainTransition: all 0.3s linear;
 $mainSpacing: 3px;
-nav-btn {
+
+body {
+  margin-top: 18rem;
+  padding: 0;
+  h1 {
+    font-size: $HeaderOneSize;
+    margin: 1rem 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+}
+.container {
+  width: auto;
+  height: 200px;
+  padding: 1rem;
+  overflow: hidden;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  text-indent: 2rem;
+  font-size: $fontSize;
+}
+.nav-btn {
   border: none;
   outline: none;
 }
 
-body {
-  margin-top: 18rem;
-}
 @media screen and (max-width: $sreenSize) {
   body {
     margin-top: 5rem;
@@ -206,23 +224,12 @@ h1 {
 /*end navbar*/
 
 /*home*/
-.container {
-  width: auto;
-  height: 200px;
-  padding: 1rem;
-  overflow: hidden;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  align-content: space-around;
-  text-indent: 2rem;
-  font-size: $fontSize;
 
-  p {
-    margin: 1rem;
-    text-align: justify;
-  }
+p {
+  margin: 1rem;
+  text-align: justify;
 }
+
 .alba-text {
   & > p:first-child {
     font-style: italic;
@@ -262,18 +269,22 @@ h1 {
 }
 
 /*end pictures*/
-/*paypal*/
-.paypal-container {
-  position: static;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 1rem;
-  p {
-    justify-content: center;
+/*membership*/
+.memmbership-container {
+  height: auto;
+  a {
+    font-size: $HeaderOneSize;
+    text-decoration: none;
+    color: $linkColor;
+    width: fit-content;
+    &:hover {
+      color: $hoverColorText;
+      text-shadow: $hoverColorShadow;
+    }
   }
 }
-/*end paypal*/
+
+/*end membership*/
 
 /*about*/
 .about-container {
