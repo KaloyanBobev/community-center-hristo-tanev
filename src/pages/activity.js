@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
-import UnderConstruction from '../components/underConstruction';
+import Image from '../components/Image';
 export default class activity extends Component {
     render() {
         return (
-            <div>
-                <UnderConstruction />
-            </div>
+            <section className="activity-container container">
+                <Image />
+            </section>
         )
     }
 }
