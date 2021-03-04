@@ -7,6 +7,7 @@ $linkColor: black;
 $mainColor: lightgray;
 $hoverColorText: green;
 $hoverColorShadow: 1px 1px 3px black;
+$imageColorShadow: 5px 5px 5px $mainColor;
 $fontSize: 1.1rem;
 $HeaderOneSize: 1.5rem;
 $mainTransition: all 0.3s linear;
@@ -289,6 +290,19 @@ p {
 /*activity*/
 .activity-container {
   margin: 1rem;
+  div {
+    padding: 3rem;
+    margin: 3rem;
+    a {
+      width: fit-content;
+
+      img {
+        width: 20rem;
+        height: auto;
+        box-shadow: $imageColorShadow;
+      }
+    }
+  }
 }
 /*end activity*/
 
