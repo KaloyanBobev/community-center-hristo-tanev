@@ -3,8 +3,10 @@ import Image from '../components/Image';
 export default class activity extends Component {
     render() {
         return (
-            <section className="activity-container container">
-                <Image />
+            <section className="activity-container ">
+                <div>
+                    <Image />
+                </div>
             </section>
         )
     }
