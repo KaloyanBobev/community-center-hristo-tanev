@@ -4,9 +4,9 @@ export default class activity extends Component {
     render() {
         return (
             <section className="activity-container ">
-                <div>
-                    <Image />
-                </div>
+
+                <Image />
+
             </section>
         )
     }
