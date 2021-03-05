@@ -5,14 +5,16 @@ $imageSize: 10rem;
 $spanPadding: 10px;
 $linkColor: black;
 $mainColor: lightgray;
+$imageBorderColor: lightgray;
 $hoverColorText: green;
 $hoverColorShadow: 1px 1px 3px black;
-$imageColorShadow: 5px 5px 5px $mainColor;
+$imageColorShadow: 15px 15px 15px $imageBorderColor;
 $fontSize: 1.1rem;
 $HeaderOneSize: 1.5rem;
 $mainTransition: all 0.3s linear;
 $mainSpacing: 3px;
 
+/*global*/
 body {
   margin-top: 18rem;
   padding: 0;
@@ -21,6 +23,19 @@ body {
     margin: 1rem 0;
     text-transform: uppercase;
     letter-spacing: 2px;
+  }
+  .img {
+    margin: 2rem 2rem 2rem 1rem;
+    padding: auto;
+    width: 15rem;
+    border: 1.5rem inset $imageBorderColor;
+    border-radius: none;
+    box-shadow: 3px 3px 3px $imageBorderColor;
+    cursor: zoom-in;
+    &:hover {
+      opacity: 0.8;
+      box-shadow: 15px 15px 15px $imageBorderColor;
+    }
   }
 }
 .container {
@@ -67,6 +82,7 @@ h1 {
     color: $hoverColorText;
   }
 }
+/*end global*/
 
 /*navbar*/
 .navbar-container {
@@ -78,6 +94,7 @@ h1 {
   font-size: $fontSize;
   letter-spacing: $mainSpacing;
   font-family: "Hachi Maru Pop", cursive;
+  z-index: 1;
   .nav-top {
     padding-bottom: 1rem;
   }
@@ -290,16 +307,14 @@ p {
 /*activity*/
 .activity-container {
   margin: 1rem;
-  div {
-    padding: 3rem;
-    margin: 3rem;
+  span {
+    display: inline-block;
+    margin: 2rem;
     a {
       width: fit-content;
-
+      border: 1px solid red;
       img {
-        width: 20rem;
-        height: auto;
-        box-shadow: $imageColorShadow;
+        margin: 0;
       }
     }
   }
