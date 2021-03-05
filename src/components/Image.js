@@ -21,8 +21,14 @@ export default class Image extends Component {
                 <h1>Фото галерия</h1>
                 {imgData.map((img) => {
                     return (
-                        <a key={img.sys.id} href={img.fields.src}>
-                            <img src={img.fields.src} alt={img.fields.name}></img>
+                        <a
+                            target="_blank"
+                            key={img.sys.id}
+                            href={img.fields.src}>
+                            <img className="img"
+
+                                src={img.fields.src}
+                                alt={img.fields.name}></img>
                         </a>
                     )
                 })}
