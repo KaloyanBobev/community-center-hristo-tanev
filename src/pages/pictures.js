@@ -6,8 +6,12 @@ export default class pictures extends Component {
         return (
             <section className="pictures-container">
                 <h1>Картини на Христо Танев</h1>
-                <div className="image-center">
-                    <img src={img1} alt="art" />
+                <div className="image-center ">
+                    <a href={img1} target="_blank">
+                        <img className="img"
+                            src={img1}
+                            alt="art" />
+                    </a>
                 </div>
             </section>
         )
