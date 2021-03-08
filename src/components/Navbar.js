@@ -41,6 +41,7 @@ export default class Navbar extends Component {
                         src={sign1}
                         alt="sign hristo tanev" />
                     <h3> Читалище Христо Танев</h3>
+
                     <button type="button" className="nav-btn">
                         <FaAlignRight
                             className="nav-icon"
