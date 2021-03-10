@@ -5,8 +5,8 @@ export default class activity extends Component {
         return (
             <section className="activity-container ">
 
+                <h1>Photo galallery</h1>
                 <Image />
-
             </section>
         )
     }
