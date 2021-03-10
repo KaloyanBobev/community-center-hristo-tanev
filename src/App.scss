@@ -4,7 +4,7 @@ $sreenSize: 960px;
 $imageSize: 10rem;
 $spanPadding: 10px;
 $linkColor: black;
-$mainColor: #00d2c6;
+$mainColor: lighten(#00d2c6, 40%);
 $imageBorderColor: lightgray;
 $hoverColorText: #aaf287;
 $hoverColorShadow: 1px 1px 3px black;
@@ -41,7 +41,7 @@ body {
 .container {
   width: auto;
   height: 200px;
-  padding: 1rem;
+  padding: 4rem 1rem;
   overflow: hidden;
   margin: auto;
   display: flex;
@@ -288,17 +288,27 @@ p {
 }
 
 /*end pictures*/
+
 /*membership*/
 .memmbership-container {
   height: auto;
-  a {
-    font-size: $HeaderOneSize;
-    text-decoration: none;
-    color: $linkColor;
+  margin: 4rem;
+  div {
     width: fit-content;
-    &:hover {
-      color: $hoverColorText;
-      text-shadow: $hoverColorShadow;
+    h1 {
+      padding-top: 1rem;
+    }
+    a {
+      font-size: $HeaderOneSize;
+      text-decoration: none;
+      border-bottom: 5px solid $linkColor;
+      color: $linkColor;
+      width: fit-content;
+
+      &:hover {
+        color: $hoverColorText;
+        text-shadow: $hoverColorShadow;
+      }
     }
   }
 }
@@ -308,6 +318,9 @@ p {
 /*activity*/
 .activity-container {
   margin: 1rem;
+  h1 {
+    margin: 3rem;
+  }
   span {
     display: inline-block;
     margin: 2rem;
@@ -324,7 +337,8 @@ p {
 
 /*about*/
 .about-container {
-  margin: 1rem;
+  padding-top: 3rem;
+  margin: 4rem;
   display: flex;
   flex-direction: column;
 }
