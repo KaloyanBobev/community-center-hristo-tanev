@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap");
 
 $sreenSize: 960px;
-$imageSize: 10rem;
+$imageSize: 11rem;
 $spanPadding: 10px;
 $linkColor: black;
 $mainColor: lighten(#00d2c6, 40%);
@@ -153,6 +153,7 @@ h1 {
         align-items: center;
         justify-content: center;
         background-size: cover;
+
         & > span {
           width: 100%;
           text-align: center;
@@ -274,7 +275,7 @@ p {
 /*pictures*/
 .pictures-container {
   width: auto;
-  padding: 1rem;
+  padding: 4rem 1rem;
   margin: auto;
 
   div {
@@ -285,6 +286,13 @@ p {
       width: 20rem;
     }
   }
+  @media screen and(max-width:$sreenSize) {
+    div {
+      img {
+        width: 10rem;
+      }
+    }
+  }
 }
 
 /*end pictures*/
@@ -292,7 +300,7 @@ p {
 /*membership*/
 .memmbership-container {
   height: auto;
-  margin: 4rem;
+  margin: 4rem 1rem;
   div {
     width: fit-content;
     h1 {
@@ -317,19 +325,25 @@ p {
 
 /*activity*/
 .activity-container {
-  margin: 1rem;
+  height: auto;
+  margin: 4rem 1rem;
   h1 {
-    margin: 3rem;
+    margin-top: 25rem;
   }
   span {
     display: inline-block;
     margin: 2rem;
     a {
       width: fit-content;
-      border: 1px solid red;
+
       img {
         margin: 0;
       }
+    }
+  }
+  @media screen and (max-width: $sreenSize) {
+    h1 {
+      margin-top: 10rem;
     }
   }
 }
