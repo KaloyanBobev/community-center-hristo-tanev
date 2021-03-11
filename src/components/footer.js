@@ -6,7 +6,7 @@ export default function footer() {
     return (
         <footer className="footer-container">
             <SocialFollow />
-            <p>Всички права запазени. CopyRight © {year} година</p>
+            <p>Всички права запазени. CopyRight © 2020 - {year} година</p>
         </footer>
     )
 }
