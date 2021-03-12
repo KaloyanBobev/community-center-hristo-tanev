@@ -1,24 +1,17 @@
 import React, { Component } from 'react';
 
-import imgData from '../data/imageData'
 
 export default class Image extends Component {
-    constructor() {
-        super();
-        this.state = {
-            data: ''
-        }
+    constructor(props) {
+        super(props);
+
     }
 
-    componentDidMount() {
-        this.setState({
-            data: imgData
-        })
-    }
+
     render() {
         return (
             <>
-                {imgData.map((img) => {
+                {this.props.data.map((img) => {
                     return (
                         <a
                             target="_blank"
