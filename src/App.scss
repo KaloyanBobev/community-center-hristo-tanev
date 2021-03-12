@@ -4,7 +4,7 @@ $sreenSize: 960px;
 $imageSize: 11rem;
 $spanPadding: 10px;
 $linkColor: black;
-$mainColor: lighten(#00d2c6, 40%);
+$mainColor: lighten(#00d2c6, 50%);
 $imageBorderColor: lightgray;
 $hoverColorText: #aaf287;
 $hoverColorShadow: 1px 1px 3px black;
@@ -40,7 +40,7 @@ body {
 }
 .container {
   width: auto;
-  height: 200px;
+  height: 30rem;
   padding: 4rem 1rem;
   overflow: hidden;
   margin: auto;
@@ -49,6 +49,17 @@ body {
   align-content: space-around;
   text-indent: 2rem;
   font-size: $fontSize;
+}
+@media screen and(max-width:$sreenSize) {
+  .container {
+    h1 {
+      font-size: $HeaderOneSize * 0.8;
+    }
+    a {
+      font-size: $fontSize * 1.2;
+      margin: 0;
+    }
+  }
 }
 .nav-btn {
   border: none;
@@ -139,7 +150,11 @@ h1 {
     .logo2,
     .slide-shadow {
       box-shadow: 5px 5px 15px black;
-      border: 15px inset gray;
+      border: 15px inset darken($imageBorderColor, 20%);
+    }
+    .logo2,
+    .slide-shadow {
+      background-color: darken($imageBorderColor, 20%);
     }
     .each-slide {
       display: flex;
@@ -287,6 +302,9 @@ p {
     }
   }
   @media screen and(max-width:$sreenSize) {
+    h1 {
+      font-size: $HeaderOneSize * 0.8;
+    }
     div {
       img {
         width: 10rem;
@@ -307,6 +325,7 @@ p {
       padding-top: 1rem;
     }
     a {
+      margin-left: 2rem;
       font-size: $HeaderOneSize;
       text-decoration: none;
       border-bottom: 5px solid $linkColor;
@@ -316,6 +335,17 @@ p {
       &:hover {
         color: $hoverColorText;
         text-shadow: $hoverColorShadow;
+      }
+    }
+  }
+  @media screen and(max-width:$sreenSize) {
+    div {
+      h1 {
+        font-size: $HeaderOneSize * 0.8;
+      }
+      a {
+        font-size: $fontSize * 1.2;
+        margin: 0;
       }
     }
   }
