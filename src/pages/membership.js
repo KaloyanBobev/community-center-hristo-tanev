@@ -9,21 +9,23 @@ export default class membership extends Component {
     render() {
         return (
             <section className="memmbership-container container">
-                <div>
-                    <h1>Заявление за членство</h1>
-                    <Image data={membershipData.slice(0, 1)} />
-                    <a href={doc}><VscCloudDownload /> линк към заявление </a>
-                </div>
-                <div>
-                    <h1>Устав на читалище Христо Танев</h1>
-                    <Image data={membershipData.slice(1, 2)} />
-                    <a href={rules}><VscCloudDownload /> линк към устава на читалището</a>
-                </div>
-                <div>
-                    <h1>Удостоверение за вписване в регистъра на народните читалища</h1>
-                    <Image data={membershipData.slice(2, 3)} />
-                    <a href={certificate}><VscCloudDownload /> линк към удостоверението</a>
-                </div>
+
+                <h1>Заявление за членство</h1>
+
+
+                <Image data={membershipData.slice(0, 1)} />
+                <a href={doc}><VscCloudDownload /> линк към заявление </a>
+
+                <h1>Устав на читалище Христо Танев</h1>
+
+                <Image data={membershipData.slice(1, 2)} />
+                <a href={rules}><VscCloudDownload /> линк към устава на читалището</a>
+
+                <h1>Удостоверение за вписване в регистъра на народните читалища</h1>
+
+                <Image data={membershipData.slice(2, 3)} />
+                <a href={certificate}><VscCloudDownload /> линк към удостоверението</a>
+
             </section>
         )
     }
