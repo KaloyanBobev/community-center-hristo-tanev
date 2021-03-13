@@ -319,23 +319,25 @@ p {
 .memmbership-container {
   height: auto;
   margin: 4rem 1rem;
-  div {
-    width: fit-content;
-    h1 {
-      padding-top: 1rem;
-    }
-    a {
-      margin-left: 2rem;
-      font-size: $HeaderOneSize;
-      text-decoration: none;
-      border-bottom: 5px solid $linkColor;
-      color: $linkColor;
-      width: fit-content;
+  display: flex;
+  flex-direction: column;
 
-      &:hover {
-        color: $hoverColorText;
-        text-shadow: $hoverColorShadow;
-      }
+  h1 {
+  }
+  a {
+    font-size: $HeaderOneSize;
+    text-decoration: none;
+    text-indent: 0;
+    color: $linkColor;
+    width: fit-content;
+
+    img {
+      margin: 0;
+      padding: 0;
+    }
+    &:hover {
+      color: $hoverColorText;
+      text-shadow: $hoverColorShadow;
     }
   }
   @media screen and(max-width:$sreenSize) {
