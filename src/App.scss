@@ -322,8 +322,6 @@ p {
   display: flex;
   flex-direction: column;
 
-  h1 {
-  }
   a {
     font-size: $HeaderOneSize;
     text-decoration: none;
@@ -365,9 +363,9 @@ p {
   span {
     display: inline-block;
     margin: 2rem;
+    background-color: blue;
     a {
       width: fit-content;
-
       img {
         margin: 0;
       }
