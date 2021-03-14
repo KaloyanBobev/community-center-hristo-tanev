@@ -2,6 +2,7 @@ import img1 from '../images/membership/zavlenie-image.png'
 import img2 from '../images/membership/ustav-image.png'
 import img3 from '../images/membership/udostoverenie-image.png'
 
+// eslint-disable-next-line
 export default [
     {
         sys: {
