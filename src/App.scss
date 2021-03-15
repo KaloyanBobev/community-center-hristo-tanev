@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap");
 
 $sreenSize: 960px;
-$imageSize: 11rem;
+$imageSize: 9rem;
 $spanPadding: 10px;
 $linkColor: black;
 $mainColor: lighten(#00d2c6, 50%);
@@ -18,12 +18,7 @@ $mainSpacing: 3px;
 body {
   margin-top: 18rem;
   padding: 0;
-  h1 {
-    font-size: $HeaderOneSize;
-    margin: 1rem 0;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-  }
+
   .img {
     margin: 2rem 2rem 2rem 1rem;
     padding: auto;
@@ -37,6 +32,12 @@ body {
       box-shadow: 15px 15px 15px $imageBorderColor;
     }
   }
+}
+h1 {
+  font-size: $HeaderOneSize;
+  margin: 2rem 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 .container {
   width: auto;
@@ -70,12 +71,6 @@ body {
   body {
     margin-top: 5rem;
   }
-}
-h1 {
-  font-size: $HeaderOneSize;
-  margin: 1rem 0;
-  text-transform: uppercase;
-  letter-spacing: 2px;
 }
 
 .btn {
@@ -320,26 +315,39 @@ p {
   height: auto;
   margin: 4rem 1rem;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  div {
+    display: flex;
+    flex-direction: column;
+    height: 30rem;
+    width: 33%;
+    a {
+      font-size: $HeaderOneSize;
+      text-decoration: none;
+      text-indent: 0;
+      color: $linkColor;
+      width: fit-content;
 
-  a {
-    font-size: $HeaderOneSize;
-    text-decoration: none;
-    text-indent: 0;
-    color: $linkColor;
-    width: fit-content;
-
-    img {
-      margin: 0;
-      padding: 0;
-    }
-    &:hover {
-      color: $hoverColorText;
-      text-shadow: $hoverColorShadow;
+      img {
+        margin: 0;
+        padding: 0;
+      }
+      &:hover {
+        color: $hoverColorText;
+        text-shadow: $hoverColorShadow;
+      }
     }
   }
-  @media screen and(max-width:$sreenSize) {
+}
+@media screen and(max-width:$sreenSize) {
+  .memmbership-container {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
     div {
+      display: flex;
+      flex-direction: column;
+
       h1 {
         font-size: $HeaderOneSize * 0.8;
       }
@@ -350,7 +358,6 @@ p {
     }
   }
 }
-
 /*end membership*/
 
 /*activity*/
