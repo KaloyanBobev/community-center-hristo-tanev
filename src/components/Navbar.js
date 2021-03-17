@@ -5,6 +5,7 @@ import 'react-slideshow-image/dist/styles.css';
 import { FaAlignRight } from 'react-icons/fa';
 import sign1 from '../images/logo_3.png';
 import sign2 from '../images/portret-hristo-tanev.jpg';
+import sign3 from '../images/logo4.jpg';
 import Navigation from './Navigation';
 import navData from '../data/navData';
 
@@ -83,6 +84,10 @@ export default class Navbar extends Component {
                         src={sign2}
                         className="logo2 img-size"
                         alt="hristo tanev" />
+                    <img
+                        src={sign3}
+                        className="logo2 img-size"
+                        alt="alba avitohol" />
                 </div>
                 <div className="nav-center">
                     <div onClick={this.hangleToggle} className={this.state.isOpen ?
