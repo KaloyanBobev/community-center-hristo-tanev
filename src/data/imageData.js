@@ -16,7 +16,7 @@ import img14 from '../images/img/img14.jpg';
 import img15 from '../images/img/img15.jpg';
 import img16 from '../images/img/img16.jpg';
 import img17 from '../images/img/img17.jpg';
-import img18 from '../images/img/img18.jpg';
+
 import img19 from '../images/img/img19.jpg';
 import img20 from '../images/img/img20.jpg';
 import img21 from '../images/img/img21.jpg';
@@ -192,16 +192,6 @@ export default [
         fields: {
             name: "",
             src: img17
-        }
-    },
-    {
-        sys: {
-            id: "18",
-
-        },
-        fields: {
-            name: "",
-            src: img18
         }
     },
     {
