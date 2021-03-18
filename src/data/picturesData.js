@@ -1,18 +1,17 @@
 
-import img1 from '../images/pictures/Daniela-Dokcheva-Hestinarsko-horo.jpg';
-import img2 from '../images/pictures/Daniela-Dokcheva-Peperudeno.jpg';
-import img3 from '../images/pictures/Daniela-Dokcheva-Tanc.jpg';
-import img4 from '../images/pictures/goblen 1.jpg';
-import img5 from '../images/pictures/goblen 2.jpg';
-import img6 from '../images/pictures/goblen 3.jpg';
-import img7 from '../images/pictures/goblen 4.jpg';
-import img8 from '../images/pictures/goblen5.jpg';
-import img9 from '../images/pictures/Hristo-Tanev-Probudenica.jpg';
-import img10 from '../images/pictures/Hristo-Tanev-Zakrilnikyt na Obetowanata zemq.jpg';
-import img11 from '../images/pictures/Milena-Gospodinova-risunka.jpg';
-import img12 from '../images/pictures/Sasho-Sandev-Cvete.jpg';
-import img13 from '../images/pictures/Svetlin-Stoev.jpg';
-import img14 from '../images/pictures/Vasa-Ruseva.jpg';
+import img1 from '../images/pictures/advert.jpg';
+import img2 from '../images/pictures/Daniela-Dokcheva-Hestinarsko-horo.jpg';
+import img3 from '../images/pictures/Daniela-Dokcheva-Peperudeno.jpg';
+import img4 from '../images/pictures/Daniela-Dokcheva-Tanc.jpg';
+import img5 from '../images/pictures/goblen 1.jpg';
+import img6 from '../images/pictures/goblen 2.jpg';
+import img7 from '../images/pictures/goblen 3.jpg';
+import img8 from '../images/pictures/goblen 4.jpg';
+import img9 from '../images/pictures/goblen5.jpg';
+import img10 from '../images/pictures/Milena-Gospodinova-risunka.jpg';
+import img11 from '../images/pictures/Sasho-Sandev-Cvete.jpg';
+import img12 from '../images/pictures/Svetlin-Stoev.jpg';
+
 
 
 
@@ -135,26 +134,6 @@ export default [
         fields: {
             name: "",
             src: img12
-        }
-    },
-    {
-        sys: {
-            id: "13",
-
-        },
-        fields: {
-            name: "",
-            src: img13
-        }
-    },
-    {
-        sys: {
-            id: "14",
-
-        },
-        fields: {
-            name: "",
-            src: img14
         }
     }
 ]
