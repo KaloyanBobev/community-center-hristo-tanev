@@ -11,6 +11,7 @@ import Library from './pages/library';
 import Membership from './pages/membership';
 import notFound from './pages/notFound';
 import Pictures from './pages/pictures';
+import Events from './pages/events';
 function App() {
   return (
     <div className="app">
@@ -19,6 +20,7 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route exact path="/pictures" component={Pictures} />
         <Route path="/about" component={About} />
+        <Route path="/events" component={Events} />
         <Route path="/activity" component={Activity} />
         <Route path="/galleryAvia" component={GalleryAvia} />
         <Route path="/library" component={Library} />
