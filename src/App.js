@@ -12,6 +12,7 @@ import Membership from './pages/membership';
 import notFound from './pages/notFound';
 import Pictures from './pages/pictures';
 import Events from './pages/events';
+import Founder from './pages/founder';
 function App() {
   return (
     <div className="app">
@@ -21,6 +22,7 @@ function App() {
         <Route exact path="/pictures" component={Pictures} />
         <Route path="/about" component={About} />
         <Route path="/events" component={Events} />
+        <Route path="/founder" component={Founder} />
         <Route path="/activity" component={Activity} />
         <Route path="/galleryAvia" component={GalleryAvia} />
         <Route path="/library" component={Library} />
