@@ -7,13 +7,9 @@ import img5 from '../images/pictures/goblen 1.jpg';
 import img6 from '../images/pictures/goblen 2.jpg';
 import img7 from '../images/pictures/goblen 3.jpg';
 import img8 from '../images/pictures/goblen 4.jpg';
-import img9 from '../images/pictures/goblen5.jpg';
 import img10 from '../images/pictures/Milena-Gospodinova-risunka.jpg';
 import img11 from '../images/pictures/Sasho-Sandev-Cvete.jpg';
 import img12 from '../images/pictures/Svetlin-Stoev.jpg';
-
-
-
 
 // eslint-disable-next-line
 export default [
@@ -94,16 +90,6 @@ export default [
         fields: {
             name: "",
             src: img8
-        }
-    },
-    {
-        sys: {
-            id: "9",
-
-        },
-        fields: {
-            name: "",
-            src: img9
         }
     },
     {
