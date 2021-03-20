@@ -7,6 +7,7 @@ import img5 from '../images/pictures/goblen 1.jpg';
 import img6 from '../images/pictures/goblen 2.jpg';
 import img7 from '../images/pictures/goblen 3.jpg';
 import img8 from '../images/pictures/goblen 4.jpg';
+import img9 from '../images/pictures/KARTINA 10.jpg';
 import img10 from '../images/pictures/Milena-Gospodinova-risunka.jpg';
 import img11 from '../images/pictures/Sasho-Sandev-Cvete.jpg';
 import img12 from '../images/pictures/Svetlin-Stoev.jpg';
@@ -81,15 +82,16 @@ export default [
             name: "",
             src: img7
         }
-    },
+    }
+    ,
     {
         sys: {
-            id: "8",
+            id: "9",
 
         },
         fields: {
             name: "",
-            src: img8
+            src: img9
         }
     },
     {
