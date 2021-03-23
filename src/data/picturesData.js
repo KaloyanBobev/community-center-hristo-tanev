@@ -82,8 +82,17 @@ export default [
             name: "",
             src: img7
         }
-    }
-    ,
+    },
+    {
+        sys: {
+            id: "8",
+
+        },
+        fields: {
+            name: "",
+            src: img8
+        }
+    },
     {
         sys: {
             id: "9",
