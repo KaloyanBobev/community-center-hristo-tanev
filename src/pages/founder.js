@@ -37,7 +37,7 @@ export default class founder extends Component {
 
                 <div>
                     <Container
-                        n
+
                         visible={this.state.visible}
                         data={this.state.data.slice(2, 12)}
                         heading={heading}
