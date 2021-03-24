@@ -9,7 +9,7 @@ export default [
     {
         sys: {
             id: "1",
-
+            isShow: false
         },
         fields: {
             name: "Hristo Tanev porteret",
@@ -18,7 +18,7 @@ export default [
     }, {
         sys: {
             id: "2",
-
+            isShow: false
         },
         fields: {
             name: "Hristo Tanev porteret",
