@@ -15,6 +15,7 @@ export default class Image extends Component {
                             <img className="img"
                                 src={img.fields.src}
                                 alt={img.fields.name}></img>
+                            {this.props.isShow ? <span>{img.fields.name}</span> : ""}
                         </a>
                     )
                 })}
