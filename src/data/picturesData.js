@@ -17,7 +17,7 @@ export default [
     {
         sys: {
             id: "1",
-
+            isShow: true
         },
         fields: {
             name: "exebition",
@@ -26,7 +26,7 @@ export default [
     }, {
         sys: {
             id: "2",
-
+            isShow: true
         },
         fields: {
             name: "horo",
@@ -36,7 +36,7 @@ export default [
     {
         sys: {
             id: "3",
-
+            isShow: true
         },
         fields: {
             name: "Peperudeno",
@@ -46,7 +46,7 @@ export default [
     {
         sys: {
             id: "4",
-
+            isShow: true
         },
         fields: {
             name: "Dance",
@@ -56,7 +56,7 @@ export default [
     {
         sys: {
             id: "5",
-
+            isShow: true
         },
         fields: {
             name: "Woman with roses",
@@ -66,7 +66,7 @@ export default [
     {
         sys: {
             id: "6",
-
+            isShow: true
         },
         fields: {
             name: "Wild horses",
@@ -76,7 +76,7 @@ export default [
     {
         sys: {
             id: "7",
-
+            isShow: true
         },
         fields: {
             name: "Woman in red",
@@ -86,7 +86,7 @@ export default [
     {
         sys: {
             id: "8",
-
+            isShow: true
         },
         fields: {
             name: "Waman with cat",
@@ -96,7 +96,7 @@ export default [
     {
         sys: {
             id: "9",
-
+            isShow: true
         },
         fields: {
             name: "Awakening",
@@ -106,7 +106,7 @@ export default [
     {
         sys: {
             id: "10",
-
+            isShow: true
         },
         fields: {
             name: "Milena Gospodinova-Drawing",
@@ -116,7 +116,7 @@ export default [
     {
         sys: {
             id: "11",
-
+            isShow: true
         },
         fields: {
             name: "Sasho Sandev-Flower",
@@ -126,7 +126,7 @@ export default [
     {
         sys: {
             id: "12",
-
+            isShow: true
         },
         fields: {
             name: "Svetlin Stoev",
