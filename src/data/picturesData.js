@@ -1,5 +1,5 @@
 
-import img1 from '../images/pictures/advert.jpg';
+import img1 from '../images/pictures/exebition.jpg';
 import img2 from '../images/pictures/Daniela-Dokcheva-Hestinarsko-horo.jpg';
 import img3 from '../images/pictures/Daniela-Dokcheva-Peperudeno.jpg';
 import img4 from '../images/pictures/Daniela-Dokcheva-Tanc.jpg';
@@ -20,7 +20,7 @@ export default [
 
         },
         fields: {
-            name: "",
+            name: "exebition",
             src: img1
         }
     }, {
@@ -29,7 +29,7 @@ export default [
 
         },
         fields: {
-            name: "",
+            name: "horo",
             src: img2
         }
     },
@@ -39,7 +39,7 @@ export default [
 
         },
         fields: {
-            name: "",
+            name: "Peperudeno",
             src: img3
         }
     },
@@ -49,7 +49,7 @@ export default [
 
         },
         fields: {
-            name: "",
+            name: "Dance",
             src: img4
         }
     },
@@ -59,7 +59,7 @@ export default [
 
         },
         fields: {
-            name: "",
+            name: "Woman with roses",
             src: img5
         }
     },
@@ -69,7 +69,7 @@ export default [
 
         },
         fields: {
-            name: "",
+            name: "Wild horses",
             src: img6
         }
     },
@@ -79,7 +79,7 @@ export default [
 
         },
         fields: {
-            name: "",
+            name: "Woman in red",
             src: img7
         }
     },
@@ -89,7 +89,7 @@ export default [
 
         },
         fields: {
-            name: "",
+            name: "Waman with cat",
             src: img8
         }
     },
@@ -99,7 +99,7 @@ export default [
 
         },
         fields: {
-            name: "",
+            name: "Awakening",
             src: img9
         }
     },
@@ -109,7 +109,7 @@ export default [
 
         },
         fields: {
-            name: "",
+            name: "Milena Gospodinova-Drawing",
             src: img10
         }
     },
@@ -119,7 +119,7 @@ export default [
 
         },
         fields: {
-            name: "",
+            name: "Sasho Sandev-Flower",
             src: img11
         }
     },
@@ -129,7 +129,7 @@ export default [
 
         },
         fields: {
-            name: "",
+            name: "Svetlin Stoev",
             src: img12
         }
     }
