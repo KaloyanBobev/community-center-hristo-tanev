@@ -32,7 +32,9 @@ export default class founder extends Component {
             <section className="container founder">
                 <div>
                     <h1>Founder</h1>
-                    <Image data={data.slice(0, 2)} />
+                    <Image
+                        data={data.slice(0, 2)}
+                    />
                 </div>
 
                 <div>
