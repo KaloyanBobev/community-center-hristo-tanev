@@ -306,14 +306,14 @@ p {
   margin: auto;
 
   a {
+    border: 1px solid red;
+    margin-left: 2rem;
     background-color: lightgreen;
-
     img {
       width: 20rem;
     }
     span {
-      display: inline-flex;
-      background-color: lightsalmon;
+      width: fit-content;
     }
   }
   @media screen and(max-width:$sreenSize) {
