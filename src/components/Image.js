@@ -7,7 +7,7 @@ export default class Image extends Component {
             <>
                 {this.props.data.map((img) => {
                     return (
-                        <div id="image-cont">
+                        <div className="image-cont">
                             <a
                                 target="_blank"
                                 rel="noreferrer"
