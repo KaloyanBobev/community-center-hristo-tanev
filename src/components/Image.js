@@ -7,16 +7,19 @@ export default class Image extends Component {
             <>
                 {this.props.data.map((img) => {
                     return (
-                        <a
-                            target="_blank"
-                            rel="noreferrer"
-                            key={img.sys.id}
-                            href={img.fields.src}>
-                            <img className="img"
-                                src={img.fields.src}
-                                alt={img.fields.name}></img>
+                        <div id="image-cont">
+                            <a
+                                target="_blank"
+                                rel="noreferrer"
+                                key={img.sys.id}
+                                href={img.fields.src}>
+                                <img className="img"
+                                    src={img.fields.src}
+                                    alt={img.fields.name}></img>
+
+                            </a>
                             {this.props.isShow ? <span>{img.fields.name}</span> : ""}
-                        </a>
+                        </div>
                     )
                 })}
             </>
