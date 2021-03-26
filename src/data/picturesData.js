@@ -20,7 +20,7 @@ export default [
             isShow: true
         },
         fields: {
-            name: "exebition",
+            name: "Exhibition",
             src: img1
         }
     }, {
@@ -29,7 +29,7 @@ export default [
             isShow: true
         },
         fields: {
-            name: "horo",
+            name: "Horo",
             src: img2
         }
     },
@@ -39,7 +39,7 @@ export default [
             isShow: true
         },
         fields: {
-            name: "Peperudeno",
+            name: "Butterfly",
             src: img3
         }
     },
@@ -89,7 +89,7 @@ export default [
             isShow: true
         },
         fields: {
-            name: "Waman with cat",
+            name: "Woman with cat",
             src: img8
         }
     },
