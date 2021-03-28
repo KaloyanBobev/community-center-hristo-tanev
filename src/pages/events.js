@@ -3,6 +3,9 @@ import albaData from '../data/albaData.js';
 import Container from '../components/Container';
 import ToggleBtn from '../components/ToggleBtn';
 
+
+import img from '../images/Vasa-Ruseva.jpg';
+
 export default class events extends Component {
     constructor() {
         super();
@@ -25,7 +28,8 @@ export default class events extends Component {
     render() {
         let heading = "Васа РУСЕВА, галерия „Алба-Авитохол“ в Стара Загора: Редовните ни срещи продължават";
         return (
-            <>
+            <section className="event-container">
+                <img src={img} alt="Vasa Ruseva" />
                 <Container
                     className={"alba-text"}
                     visible={this.state.visible}
@@ -37,7 +41,7 @@ export default class events extends Component {
                     handleToggle={this.handleToggle}
                     visible={this.state.visible}
                 />
-            </>
+            </section>
         )
     }
 }
