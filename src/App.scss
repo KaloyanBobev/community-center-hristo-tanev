@@ -21,12 +21,15 @@ body {
   padding: 0;
 
   .image-cont {
+    width: fit-content;
+    padding: auto;
     display: inline-flex;
     flex-direction: column;
-    margin: 2rem;
+
+    margin: 1rem;
     a {
       width: fit-content;
-      margin: 2rem;
+      margin: 1rem auto;
       .img {
         width: 15rem;
         border: 1.5rem groove $imageBorderColor;
@@ -39,8 +42,9 @@ body {
         }
       }
     }
+
     span {
-      max-width: fit-content;
+      width: 12rem;
       padding: 0.2rem 0.8rem;
       align-self: center;
       align-items: center;
@@ -56,6 +60,19 @@ body {
       font-style: italic;
       letter-spacing: $mainSpacing;
       font-family: "Hachi Maru Pop", cursive;
+    }
+  }
+}
+
+@media screen and(max-width:$sreenSize) {
+  .image-cont {
+    a {
+      .img {
+        width: 10rem;
+      }
+    }
+    span {
+      font-size: $fontSize * 0.2;
     }
   }
 }
@@ -288,6 +305,14 @@ h1 {
 }
 /*end alba gallery*/
 
+/*events*/
+.event-container {
+  img {
+    margin: 2rem;
+    width: $imageSize * 2;
+  }
+}
+/*enf events*/
 /*home*/
 
 p {
@@ -329,9 +354,10 @@ p {
 /*pictures*/
 .pictures-container {
   width: auto;
-  padding: 4rem 1rem;
-  margin: auto;
-
+  margin-bottom: 4rem;
+  h1 {
+    padding: 4rem 2rem;
+  }
   a {
     display: inline-flex;
     flex-direction: column;
