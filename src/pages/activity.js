@@ -6,7 +6,10 @@ export default class activity extends Component {
         return (
             <section className="activity-container">
                 <h1>Фото галерия</h1>
-                <Image data={imgData} />
+                <Image
+                    data={imgData}
+
+                />
             </section>
         )
     }
