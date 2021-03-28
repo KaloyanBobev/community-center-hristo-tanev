@@ -7,11 +7,14 @@ export default class Image extends Component {
             <>
                 {this.props.data.map((img) => {
                     return (
-                        <div className="image-cont">
+                        <div
+                            className="image-cont"
+                            key={img.sys.id}
+                        >
                             <a
                                 target="_blank"
                                 rel="noreferrer"
-                                key={img.sys.id}
+
                                 href={img.fields.src}>
                                 <img className="img"
                                     src={img.fields.src}
