@@ -2,9 +2,7 @@ import React, { Component } from 'react'
 import albaData from '../data/albaData.js';
 import Container from '../components/Container';
 import ToggleBtn from '../components/ToggleBtn';
-
-
-import img from '../images/Vasa-Ruseva.jpg';
+import Image from '../components/Image';
 
 export default class events extends Component {
     constructor() {
@@ -26,14 +24,18 @@ export default class events extends Component {
         })
     }
     render() {
+
         let heading = "Васа РУСЕВА, галерия „Алба-Авитохол“ в Стара Загора: Редовните ни срещи продължават";
         return (
             <section className="event-container">
-                <img src={img} alt="Vasa Ruseva" />
+                <Image
+                    data={this.state.data.slice(7, 8)}
+
+                />
                 <Container
                     className={"alba-text"}
                     visible={this.state.visible}
-                    data={this.state.data}
+                    data={this.state.data.slice(0, 7)}
                     heading={heading}
                 />
 
