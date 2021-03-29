@@ -307,12 +307,13 @@ h1 {
 
 /*events*/
 .event-container {
-  img {
-    margin: 2rem;
-    width: $imageSize * 2;
+  padding: 4rem 1rem;
+  a {
+    background-color: bisque;
   }
 }
-/*enf events*/
+/*end events*/
+
 /*home*/
 
 p {
