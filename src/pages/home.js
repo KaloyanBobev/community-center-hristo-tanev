@@ -29,12 +29,14 @@ export default class home extends Component {
 
     render() {
         let heading = "НАРОДНО ЧИТАЛИЩЕ „ХРИСТО ТАНЕВ – 2020“ СТАРА ЗАГОРА";
+        let subheading = "С дух и вдъхновение - вечна благодат";
         return (
             <>
                 <Container
                     visible={this.state.visible}
                     data={this.state.data}
                     heading={heading}
+                    subheading={subheading}
                 />
                 <ToggleBtn
                     visible={this.state.visible}
