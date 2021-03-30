@@ -33,7 +33,7 @@ body {
       .img {
         width: 15rem;
         border: 1.5rem groove $imageBorderColor;
-        border-radius: none;
+        border-radius: 5rem;
         box-shadow: $boxShadow;
         cursor: zoom-in;
         &:hover {
