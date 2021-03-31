@@ -4,12 +4,14 @@ import imgData from '../data/imageData';
 export default class activity extends Component {
     render() {
         return (
-            <section className="activity-container">
+            <section className="picture-body">
                 <h1>Фото галерия</h1>
-                <Image
-                    data={imgData}
+                <div className="pictures-container">
+                    <Image
+                        data={imgData}
 
-                />
+                    />
+                </div>
             </section>
         )
     }
