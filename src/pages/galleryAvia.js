@@ -8,11 +8,14 @@ export default class galleryAvia extends Component {
     render() {
 
         return (
-            <section className="pictures-container">
+            <section className="picture-body">
                 <h1>Картини представени в Алба Авитохол</h1>
-                <Image
-                    data={data}
-                    isShow={true} />
+                <div className="pictures-container">
+                    <Image
+
+                        data={data}
+                        isShow={true} />
+                </div>
             </section>
         )
     }
