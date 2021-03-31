@@ -7,10 +7,11 @@ import img5 from '../images/pictures/goblen 1.jpg';
 import img6 from '../images/pictures/goblen 2.jpg';
 import img7 from '../images/pictures/goblen 3.jpg';
 import img8 from '../images/pictures/goblen 4.jpg';
-import img9 from '../images/pictures/KARTINA 10.jpg';
-import img10 from '../images/pictures/Milena-Gospodinova-risunka.jpg';
-import img11 from '../images/pictures/Sasho-Sandev-Cvete.jpg';
-import img12 from '../images/pictures/Svetlin-Stoev.jpg';
+import img9 from '../images/pictures/goblen 5.jpg';
+import img10 from '../images/pictures/KARTINA 10.jpg';
+import img11 from '../images/pictures/Milena-Gospodinova-risunka.jpg';
+import img12 from '../images/pictures/Sasho-Sandev-Cvete.jpg';
+import img13 from '../images/pictures/Svetlin-Stoev.jpg';
 
 // eslint-disable-next-line
 export default [
@@ -99,8 +100,18 @@ export default [
             isShow: true
         },
         fields: {
-            name: "Awakening",
+            name: "Magic",
             src: img9
+        }
+    },
+    {
+        sys: {
+            id: "9",
+            isShow: true
+        },
+        fields: {
+            name: "Awakening",
+            src: img10
         }
     },
     {
@@ -110,7 +121,7 @@ export default [
         },
         fields: {
             name: "Milena Gospodinova-Drawing",
-            src: img10
+            src: img11
         }
     },
     {
@@ -120,7 +131,7 @@ export default [
         },
         fields: {
             name: "Sasho Sandev-Flower",
-            src: img11
+            src: img12
         }
     },
     {
@@ -130,7 +141,7 @@ export default [
         },
         fields: {
             name: "Svetlin Stoev",
-            src: img12
+            src: img13
         }
     }
 ]
