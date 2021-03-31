@@ -30,7 +30,6 @@ export default class events extends Component {
             <section className="event-container">
                 <Image
                     data={this.state.data.slice(7, 8)}
-
                 />
                 <Container
                     className={"alba-text"}
