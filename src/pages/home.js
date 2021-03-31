@@ -29,7 +29,7 @@ export default class home extends Component {
 
     render() {
         let heading = "НАРОДНО ЧИТАЛИЩЕ „ХРИСТО ТАНЕВ – 2020“ СТАРА ЗАГОРА";
-        let subheading = "С дух и вдъхновение - вечна благодат";
+        let subheading = "С дух и вдъхновение - вечна благодат!";
         return (
             <>
                 <Container
