@@ -18,7 +18,10 @@ export default class Image extends Component {
                                 href={img.fields.src}>
                                 <img className="img"
                                     src={img.fields.src}
-                                    alt={img.fields.name}></img>
+                                    alt={img.fields.name}
+                                >
+
+                                </img>
 
                             </a>
                             {this.props.isShow ? <span>{img.fields.name}</span> : ""}
