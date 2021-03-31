@@ -6,13 +6,13 @@ import data from '../data/picturesHristoTanevData';
 export default class pictures extends Component {
     render() {
         return (
-            <section className="pictures-container">
+            <section className="picture-body">
                 <h1>Картини на Христо Танев</h1>
-                {/* <img className="img" alt="HristoTanev" src={img} /> */}
-
-                <Image data={data}
-                    isShow={true}
-                />
+                <div className="pictures-container">
+                    <Image data={data}
+                        isShow={true}
+                    />
+                </div>
             </section>
         )
     }
