@@ -22,20 +22,21 @@ body {
 
   .image-cont {
     width: fit-content;
-    padding: auto;
-    display: inline-flex;
-    flex-direction: column;
 
-    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 2rem;
     a {
       width: fit-content;
       margin: 1rem auto;
+      cursor: zoom-in;
       .img {
         width: 15rem;
-        border: 1.5rem groove $imageBorderColor;
-        border-radius: 5rem;
+        border: 1.5rem inset $imageBorderColor;
+        border-radius: 5rem 1rem;
         box-shadow: $boxShadow;
-        cursor: zoom-in;
+
         &:hover {
           opacity: 0.8;
           box-shadow: 15px 15px 15px black;
@@ -62,17 +63,16 @@ body {
       font-family: "Hachi Maru Pop", cursive;
     }
   }
-}
-
-@media screen and(max-width:$sreenSize) {
-  .image-cont {
-    a {
-      .img {
-        width: 10rem;
+  @media screen and(max-width:$sreenSize) {
+    .image-cont {
+      a {
+        .img {
+          width: 10rem;
+        }
       }
-    }
-    span {
-      font-size: $fontSize * 0.2;
+      span {
+        font-size: $fontSize * 0.2;
+      }
     }
   }
 }
@@ -297,20 +297,9 @@ h1 {
 }
 /*end navbar*/
 
-/*alba gallery*/
-.alba-container {
-  width: auto;
-  padding: 4rem 1rem;
-  margin: auto;
-}
-/*end alba gallery*/
-
 /*events*/
 .event-container {
   padding: 4rem 1rem;
-  a {
-    background-color: bisque;
-  }
 }
 /*end events*/
 
@@ -346,36 +335,33 @@ p {
 /*founder*/
 .founder {
   height: auto;
-  img {
-    width: 10rem;
-  }
 }
 /*end founder*/
 
 /*pictures*/
-.pictures-container {
-  width: auto;
-  margin-bottom: 4rem;
-  h1 {
-    padding: 4rem 2rem;
-  }
-  a {
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-decoration: none;
-    img {
-      width: 20rem;
-    }
-  }
+.picture-body {
+  padding: 4rem 2rem;
 
-  @media screen and(max-width:$sreenSize) {
-    h1 {
-      font-size: $HeaderOneSize * 0.8;
-    }
-    div {
-      img {
-        width: 10rem;
+  .pictures-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    margin-bottom: 4rem;
+
+    @media screen and(max-width:$sreenSize) {
+      .pictures-container {
+        h1 {
+          font-size: $HeaderOneSize * 0.8;
+        }
+        div {
+          margin: 0;
+          padding: 0;
+          img {
+            width: 10rem;
+          }
+        }
       }
     }
   }
@@ -385,7 +371,7 @@ p {
 
 /*membership*/
 .memmbership-container {
-  height: auto;
+  height: fit-content;
   margin: 4rem 1rem;
   display: flex;
   flex-direction: row;
