@@ -30,16 +30,16 @@ export default class founder extends Component {
         let heading = "За Христо Танев";
         return (
             <section className="container founder">
-                <div>
-                    <h1>Създател на читалището</h1>
-                    <Image
-                        data={data.slice(0, 2)}
-                    />
+                <h1>Създател на читалището</h1>
+                <div className="picture-body">
+                    <div className="pictures-container">
+                        <Image
+                            data={data.slice(0, 2)}
+                        />
+                    </div>
                 </div>
-
                 <div>
                     <Container
-
                         visible={this.state.visible}
                         data={this.state.data.slice(2, 12)}
                         heading={heading}
