@@ -4,7 +4,7 @@ import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
 import { FaAlignRight } from 'react-icons/fa';
 import sign1 from '../images/sign-hristo-tanev.png';
-import sign2 from '../images/hristo-portrets/Hristo-Tanev-Probudenica.jpg';
+import sign2 from '../images/portret-na-Hristo-Tanev.jpg';
 import sign3 from '../images/logo4.jpg';
 import Navigation from './Navigation';
 import navData from '../data/navData';
