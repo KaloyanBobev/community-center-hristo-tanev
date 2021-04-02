@@ -28,9 +28,18 @@ export default class founder extends Component {
     }
     render() {
         let heading = "За Христо Танев";
+        let poetHeading = "АЗЪТ НА БЪЛГАРИТЕ";
         return (
             <section className="container founder">
-                <h1>Създател на читалището</h1>
+                <Container
+                    visible={this.state.visible}
+                    data={this.state.data.slice(10, 15)}
+                    heading={poetHeading}
+                />
+                {/* <ToggleBtn
+                    visible={this.state.visible}
+                    handleToggle={this.handleToggle}
+                /> */}
                 <div className="picture-body">
                     <div className="pictures-container">
                         <Image
@@ -41,7 +50,7 @@ export default class founder extends Component {
                 <div>
                     <Container
                         visible={this.state.visible}
-                        data={this.state.data.slice(2, 12)}
+                        data={this.state.data.slice(2, 10)}
                         heading={heading}
                     />
                     <ToggleBtn
