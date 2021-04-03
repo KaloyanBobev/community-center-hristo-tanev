@@ -59,35 +59,44 @@ export default class Navbar extends Component {
                     </div>
                 </div>
                 <div className="slide-container">
-                    <img
-                        src={sign1}
-                        className="logo1 img-size"
-                        alt="sign hristo tanev" />
-                    <Slide className="slide-shadow">
-                        <div className="each-slide">
-                            <div className="slide1 img-size" >
-                                <span>Slide 1</span>
+                    <div className="outside-border">
+                        <img
+                            src={sign1}
+                            className="logo1 img-size"
+                            alt="sign hristo tanev" />
+                    </div>
+                    <div className="outside-border">
+                        <Slide className="slide-shadow">
+                            <div className="each-slide">
+                                <div className="slide1 img-size" >
+                                    {/* <span>Slide 1</span> */}
+                                </div>
                             </div>
-                        </div>
-                        <div className="each-slide">
-                            <div className="slide2 img-size" >
-                                <span>Slide 2</span>
+                            <div className="each-slide">
+                                <div className="slide2 img-size" >
+                                    {/* <span>Slide 2</span> */}
+                                </div>
                             </div>
-                        </div>
-                        <div className="each-slide">
-                            <div className="slide3 img-size" >
-                                <span>Slide 3</span>
+                            <div className="each-slide">
+                                <div className="slide3 img-size" >
+                                    {/* <span>Slide 3</span> */}
+                                </div>
                             </div>
-                        </div>
-                    </Slide>
-                    <img
-                        src={sign2}
-                        className="logo2 img-size"
-                        alt="hristo tanev" />
-                    <img
-                        src={sign3}
-                        className="logo2 img-size"
-                        alt="alba avitohol" />
+                        </Slide>
+
+                    </div>
+                    <div className="outside-border">
+                        <img
+                            src={sign2}
+                            className="logo2 img-size"
+                            alt="hristo tanev" />
+                    </div>
+                    <div className="outside-border">
+                        <img
+                            src={sign3}
+                            className="logo2 img-size"
+                            alt="alba avitohol" />
+                    </div>
                 </div>
                 <div className="nav-center">
                     <div onClick={this.hangleToggle} className={this.state.isOpen ?
