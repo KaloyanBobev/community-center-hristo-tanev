@@ -33,13 +33,13 @@ export default class founder extends Component {
             <section className="container founder">
                 <Container
                     visible={this.state.visible}
-                    data={this.state.data.slice(10, 15)}
+                    data={this.state.data.slice(10, 30)}
                     heading={poetHeading}
                 />
-                {/* <ToggleBtn
+                <ToggleBtn
                     visible={this.state.visible}
                     handleToggle={this.handleToggle}
-                /> */}
+                />
                 <div className="picture-body">
                     <div className="pictures-container">
                         <Image
