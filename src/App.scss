@@ -180,6 +180,11 @@ h1 {
     flex-direction: row;
     justify-content: space-around;
 
+    .outside-border {
+      border: 15px ridge darken($imageBorderColor, 50%);
+      border-radius: 1rem;
+      box-shadow: 5px 5px 15px black;
+    }
     .img-size {
       width: $imageSize;
       height: $imageSize;
@@ -188,15 +193,17 @@ h1 {
     .logo1,
     .logo2,
     .slide-shadow {
-      box-shadow: 5px 5px 15px black;
+      margin: -1px;
+      margin-bottom: -6px;
       border: 15px solid darken($imageBorderColor, 20%);
-      border-radius: 1rem;
     }
     .logo2,
     .slide-shadow {
       background-color: darken($imageBorderColor, 20%);
     }
     .each-slide {
+      padding: 0;
+      margin: 0;
       display: flex;
       justify-content: center;
       align-items: center;
