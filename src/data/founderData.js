@@ -107,8 +107,7 @@ export default [
         fields: {
             name: "paragraph twelfe",
             text: `("Азът на българите и националните символи"-
-Христо Танев и колектив)
-`
+Христо Танев и колектив)`
         }
     }, {
         sys: {
@@ -116,22 +115,7 @@ export default [
         },
         fields: {
             name: "paragraph twelfe",
-            text: `Аз - в началото бе слово,
-Зов до българи отново.
-Ъгъл, част от таз Вселена
-Танев претвори в арена
-На един всевечен прочит,
-А светът отвръща с почит.
-Българите Бог беляза,
-Ъгъл свят да имат - Аза.
-Лъч в очите им да свети,
-Гордо да пониква цвете,
-А и днес с дъга позната,
-Ражда се красива дата.
-Идва вред щастлива ера,
-Тя е близо не от вчера:
-Ек от светла Божа фраза
-`
+            text: 'Аз - в началото бе слово, '
         }
     }, {
         sys: {
@@ -139,8 +123,7 @@ export default [
         },
         fields: {
             name: "paragraph twelfe",
-            text: `Христо Танев вплете в "Аза"...
-`
+            text: `Зов до българи отново.`
         }
     }, {
         sys: {
@@ -148,10 +131,120 @@ export default [
         },
         fields: {
             name: "paragraph twelfe",
+            text: `Ъгъл, част от таз Вселена`
+        }
+    }, {
+        sys: {
+            id: "16"
+        },
+        fields: {
+            name: "paragraph twelfe",
+            text: `Танев претвори в арена`
+        }
+    }, {
+        sys: {
+            id: "17"
+        },
+        fields: {
+            name: "paragraph twelfe",
+            text: `На един всевечен прочит,    `
+        }
+    }, {
+        sys: {
+            id: "18"
+        },
+        fields: {
+            name: "paragraph twelfe",
+            text: `А светът отвръща с почит.`
+        }
+    }, {
+        sys: {
+            id: "19"
+        },
+        fields: {
+            name: "paragraph twelfe",
+            text: `Българите Бог беляза,    `
+        }
+    }, {
+        sys: {
+            id: "20"
+        },
+        fields: {
+            name: "paragraph twelfe",
+            text: `Ъгъл свят да имат - Аза.`
+        }
+    }, {
+        sys: {
+            id: "21"
+        },
+        fields: {
+            name: "paragraph twelfe",
+            text: `Лъч в очите им да свети,    `
+        }
+    }, {
+        sys: {
+            id: "22"
+        },
+        fields: {
+            name: "paragraph twelfe",
+            text: `Гордо да пониква цвете,    `
+        }
+    }, {
+        sys: {
+            id: "23"
+        },
+        fields: {
+            name: "paragraph twelfe",
+            text: `А и днес с дъга позната,    `
+        }
+    }, {
+        sys: {
+            id: "24"
+        },
+        fields: {
+            name: "paragraph twelfe",
+            text: `Ражда се красива дата.`
+        }
+    }, {
+        sys: {
+            id: "25"
+        },
+        fields: {
+            name: "paragraph twelfe",
+            text: `Идва вред щастлива ера,    `
+        }
+    }, {
+        sys: {
+            id: "26"
+        },
+        fields: {
+            name: "paragraph twelfe",
+            text: `Тя е близо не от вчера:    `
+        }
+    }, {
+        sys: {
+            id: "27"
+        },
+        fields: {
+            name: "paragraph twelfe",
+            text: `Ек от светла Божа фраза        `
+        }
+    }, {
+        sys: {
+            id: "28"
+        },
+        fields: {
+            name: "paragraph twelfe",
+            text: `Христо Танев вплете в "Аза"...    `
+        }
+    }, {
+        sys: {
+            id: "29"
+        },
+        fields: {
+            name: "paragraph twelfe",
             text: `Автор: Иван Паскалев,
-Стара Загора
-
-`
+    Стара Загора `
         }
     }
 ]
