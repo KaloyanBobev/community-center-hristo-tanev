@@ -5,7 +5,7 @@ import 'react-slideshow-image/dist/styles.css';
 import { FaAlignRight } from 'react-icons/fa';
 import sign1 from '../images/sign-hristo-tanev.png';
 import sign2 from '../images/portret-na-Hristo-Tanev.jpg';
-import sign3 from '../images/logo4.jpg';
+import sign3 from '../images/alba-sign.png';
 import Navigation from './Navigation';
 import navData from '../data/navData';
 
