@@ -379,8 +379,16 @@ p {
 
 /*membership*/
 .memmbership-container {
-  height: fit-content;
-  margin: 4rem 1rem;
+  width: auto;
+  height: 40rem;
+  padding: 4rem 1rem;
+  overflow: hidden;
+  margin: auto;
+
+  align-content: space-around;
+  text-indent: 2rem;
+  font-size: $fontSize;
+
   display: flex;
   flex-direction: row;
   div {
@@ -408,6 +416,7 @@ p {
 }
 @media screen and(max-width:$sreenSize) {
   .memmbership-container {
+    height: max-content;
     display: flex;
     flex-direction: column;
     width: fit-content;
