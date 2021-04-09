@@ -8,7 +8,7 @@ import membershipData from '../data/membershipData';
 export default class membership extends Component {
     render() {
         return (
-            <section className="memmbership-container container">
+            <section className="memmbership-container">
                 <div>
                     <h1>Заявление за членство</h1>
                     <Image data={membershipData.slice(0, 1)} />
