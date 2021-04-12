@@ -106,7 +106,7 @@ export default [
     },
     {
         sys: {
-            id: "9",
+            id: "10",
             isShow: true
         },
         fields: {
@@ -116,7 +116,7 @@ export default [
     },
     {
         sys: {
-            id: "10",
+            id: "11",
             isShow: true
         },
         fields: {
@@ -126,7 +126,7 @@ export default [
     },
     {
         sys: {
-            id: "11",
+            id: "12",
             isShow: true
         },
         fields: {
@@ -136,7 +136,7 @@ export default [
     },
     {
         sys: {
-            id: "12",
+            id: "13",
             isShow: true
         },
         fields: {
