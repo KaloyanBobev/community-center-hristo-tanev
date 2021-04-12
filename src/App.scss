@@ -55,6 +55,7 @@ body {
       border-radius: 20rem;
       box-shadow: $boxShadow;
       font-size: $fontSize;
+      font-weight: bolder;
       //text-transform: uppercase;
       overflow-wrap: break-word;
       font-weight: 900;
@@ -71,7 +72,7 @@ body {
         }
       }
       span {
-        font-size: $fontSize * 0.2;
+        font-size: $fontSize * 0.4;
       }
     }
   }
@@ -385,17 +386,18 @@ p {
   overflow: hidden;
   margin: auto;
 
-  align-content: space-around;
-  text-indent: 2rem;
   font-size: $fontSize;
-
   display: flex;
   flex-direction: row;
+
   div {
     display: flex;
     flex-direction: column;
-    height: 30rem;
-    width: 33%;
+    width: 30%;
+    h1 {
+      border-top: 5px solid black;
+      width: fit-content;
+    }
     a {
       font-size: $HeaderOneSize;
       text-decoration: none;
@@ -406,6 +408,7 @@ p {
       img {
         margin: 0;
         padding: 0;
+        width: $imageSize;
       }
       &:hover {
         color: $hoverColorText;
@@ -414,6 +417,7 @@ p {
     }
   }
 }
+
 @media screen and(max-width:$sreenSize) {
   .memmbership-container {
     height: max-content;
@@ -421,6 +425,7 @@ p {
     flex-direction: column;
     width: fit-content;
     div {
+      margin-top: 2rem;
       display: flex;
       flex-direction: column;
 
@@ -429,7 +434,9 @@ p {
       }
       a {
         font-size: $fontSize * 1.2;
-        margin: 0;
+        img {
+          width: $imageSize * 0.7;
+        }
       }
     }
   }
