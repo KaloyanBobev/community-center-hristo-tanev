@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReactLanguageSelect from 'react-languages-select';
 
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
@@ -107,6 +108,11 @@ export default class Navbar extends Component {
                             className="nav-links" />
                     </div>
                 </div>
+                <ReactLanguageSelect
+                    defaultLanguage="en"
+                    languages={["en", "fr", "de", "it", "es"]}
+                    placeholder="Select Language"
+                />
             </nav>
         )
     }
